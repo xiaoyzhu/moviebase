@@ -6,4 +6,7 @@
   <artifactId>moviebase</artifactId>
   <version>1.2-SNAPSHOT</version>
   <name>moviebase</name>
+  
+  <dependencies>
+  </dependencies>
 </project>
