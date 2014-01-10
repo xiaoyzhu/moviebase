@@ -25,9 +25,12 @@ public class MovieService {
 		count++;
 	}
 
-	public void removeByName(String string) {
-		count--;
+	public void removeByName(String name) throws MovieException {
+		if (count == 0) {
+			throw new MovieException("There are no movies in the service");
+		}
 		
+		count--;
 	}
 	
 }
