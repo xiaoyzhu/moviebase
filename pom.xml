@@ -46,14 +46,14 @@
 						</goals>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>C:\workspace\asimov\target\test-classes/testng.xml</suiteXmlFile>
+								<suiteXmlFile>${project.build.testOutputDirectory}/testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</execution>
 				</executions>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>C:\workspace\asimov\target\test-classes/testng.xml</suiteXmlFile>
+						<suiteXmlFile>${project.build.testOutputDirectory}/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
