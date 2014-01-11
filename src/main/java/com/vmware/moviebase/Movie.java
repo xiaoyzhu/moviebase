@@ -11,4 +11,8 @@ public class Movie {
 		this.name = name;
 	}
 	
+	@Override
+	public String toString() {
+		return "Movie: " + name; 
+	}
 }

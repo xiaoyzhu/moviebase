@@ -15,6 +15,12 @@ public class MovieServiceTest {
 	}
 	
 	@Test
+	public void setAndGetMoveServiceTitle() {
+		movieService.setTitle("New Movie Service");
+		assertEquals(movieService.getTitle(), "New Movie Service");
+	}
+
+	@Test
 	public void addTwoMovieAndGetTheTotal() {
 		// Subject Under Test
 		movieService.addMovie(new Movie("E.T. - The Extra Terrestrial"));
@@ -63,9 +69,11 @@ public class MovieServiceTest {
 	}
 	
 	@Test
-	public void setAndGetMoveServiceTitle() {
-		movieService.setTitle("New Movie Service");
-		assertEquals(movieService.getTitle(), "New Movie Service");
+	public void testShowMovieService() {
+		assertFalse(movieService.showMovieList());
+		
+		movieService.addMovie(new Movie("E.T. - The Extra Terrestrial"));
+		movieService.addMovie(new Movie("Wall-E"));
+		assertTrue(movieService.showMovieList());
 	}
-
 }
